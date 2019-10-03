@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume of Serhii Yatsun</title>
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <style>
+        .white_text {
+            color: white;
+        }
+
+        body {
+            background: url(img/background.jpg) no-repeat;
+            -moz-background-size: 100%;
+            /* Firefox 3.6+ */
+            -webkit-background-size: 100%;
+            /* Safari 3.1+ и Chrome 4.0+ */
+            -o-background-size: 100%;
+            /* Opera 9.6+ */
+            background-size: 100%;
+        }
+
+        * {
+            font-family: 'Mansalva', cursive;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+        }
+
+        #columns_wrapper {
+            display: flex;
+        }
+
+        .column {
+            margin-left: 2%;
+            border-left: 3px outset;
+            padding-left: 10px;
+            width: 70%;
+        }
+
+        #wrapper_of_main_content {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #main_photo {
+            width: 30%;
+            margin-right: 2%;
+        }
+
+        .footer_img {
+            width: 20px;
+            height: 20px;
+            opacity: 0.9;
+        }
+
+        .footer_img:hover {
+            opacity: 1;
+        }
+
+        #social {
+            display: flex;
+        }
+
+        #social li {
+            margin: 10px;
+            list-style-type: none;
+        }
+
+        #wrapper_of_main_content #text_about_me {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+
+        #contacts {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Резюме Сергія Яцуна</h1>
+    <main>
+        <img src="img/my_photo.jpg" alt="Сергій" id="main_photo">
+        <div id="wrapper_of_main_content">
+            <p id="text_about_me">Мене звати Сергій. Мені 19 років. Народився 28.03.2000 у місті Ватутіне
+                Звенигородського району Черкаської області.
+                До 2017 року навчався у ЗОШ №5. З 2017 року навчаюся у Черкаському Національному Університеті імені
+                Богдана Хмельницького на
+                факультеті ОТІУС, інженерія програмного забезпечення. </p>
+            <section id="columns_wrapper">
+                <section class="column">
+                    <h3>Місце навчання:</h3>
+                    <p><a href="http://www.cdu.edu.ua" target="_blank"> ЧНУ імені Б. Хмельницького</a><br>
+                        3 курс<br>
+                        Факультет <a href="https://fotius.cdu.edu.ua" target="_blank"> ОТІУС</a>
+                    </p>
+                </section>
+                <section class="column">
+                    <h3>Досвід у програмуванні:</h3>
+                    <ol>
+                        <li>С++ (без ООП)</li>
+                        <li>С#</li>
+                        <li>Java</li>
+                        <li>HTML/CSS(SASS)</li>
+                        <li>JavaScript</li>
+                        <li>Трохи Angular(TypeSctipt)</li>
+                    </ol>
+                </section>
+                <section class="column">
+                    <h3>Чим займаюсь у вільний час (хоббі):</h3>
+                    <ul>
+                        <li>Граю на гітарі/електрогітарі</li>
+                        <li>Вивчаю різні мови програмування/технології</li>
+                        <li>Люблю кататися зі швидкістю на будь-якому транспорті</li>
+                        <li>Подорожую</li>
+                    </ul>
+                </section>
+            </section>
+            <section id="contacts">
+                <h3>Я у соціальних мережах:)</h3>
+                <ul id="social">
+                    <li><a href="http://vk.com/sergeyyatsyn" target="_blank"><img class="footer_img"
+                                src="img/vk_icon.png" alt="Вконтакте"></a></li>
+                    <li><a href="https://www.instagram.com/sergeyyatsyn" target="_blank"><img class="footer_img"
+                                src="img/Instagram_icon.png" alt="Instagram"></a></li>
+                    <li><a href="https://t.me/sergeyyatsyn" target="_blank"><img class="footer_img"
+                                src="img/telegram_icon.png" alt="Telegram"></a></li>
+                    <li><a href="https://github.com/SerhiiYatsyn" target="_blank"><img class="footer_img"
+                                src="img/GitHub_icon.png" alt="GitHub"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100008467232447" target="_blank"
+                            alt="Facebook"><img class="footer_img" src="img/facebook_icon.png" alt="Facebook"></a></li>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

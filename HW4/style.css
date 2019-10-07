@@ -31,7 +31,7 @@ header a {
   left:13vw;
   top: 3vw;
   font-size: x-large;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
   font-size: 2vw;
@@ -56,7 +56,7 @@ header h1{
   left: 16vw;
   font-size: 5vw;
   top: 15vw;
-  color: white;
+  color: #FFFFFF;
   font-size: 4vw;
   line-height: 78px;
 }
@@ -139,7 +139,7 @@ section#skills h3 {
 div#about_skills div>progress {
   display: block;
   color: #C66C49;
-  background: yellow;
+  background: #FFFF00;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -219,16 +219,16 @@ ul li {
   list-style-type: none;
 }
 
+ul li a{
+  text-decoration: none;
+  color: #000000;
+}
 footer h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
   padding-top: 6vw;
   padding-bottom: 4vw;
-}
-
-ul li#bring_line {
-  height:34px;
 }
 
 footer ul{

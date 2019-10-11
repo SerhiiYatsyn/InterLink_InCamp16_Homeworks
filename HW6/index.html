@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="header">
+        <h1>Список справ</h1>
+        <div class="counters">
+            <p>Всього справ: <span id="all"></span></p>
+            <p>Виконано справ: <span id="done"></span></p>
+            <p>Не виконано справ: <span id="undone"></span></p>
+        </div>
+        <div class="container">
+            <select id="filter">
+                <option selected value="all">Всі справи</option>
+                <option value="done">Виконані</option>
+                <option value="undone">Не виконані</option>
+            </select>
+            <input type="text" placeholder="Введіть нову справу..." id="toDoEl">
+            <span id="addBtn">Добавить</span>
+             
+        </div>
+    </div>
+    <ul class="listt" id="list">
+
+    </ul>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

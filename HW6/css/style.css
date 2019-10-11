@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.listt {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.listt li {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.listt li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.listt li:hover {
+    background: #ddd;
+}
+
+.listt li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.listt li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.header {
+    background-color: black;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+#find {
+    height: auto;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#toDoEl {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+#addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50px;
+
+}
+
+#addBtn:hover {
+    background-color: #bbb;
+}
+
+.counters {
+    display: flex;
+    justify-content: space-around
+}
+
+.editBtn {
+    background-color: dimgray;
+    color: aliceblue;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    margin-right: 44px;
+}
+
+.editBtn:hover {
+    background-color: black;
+}
+
+.edittext {
+    cursor: pointer;
+    width: 90.7%;
+    padding: 0px;
+    font-size: 22px;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+
+}
+
+.ch {
+    background-color: darkgrey;
+}
+
+li.hidden {
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.container {
+    display: flex;
+}
+
+#filter {
+    border-radius: 50px;
+}

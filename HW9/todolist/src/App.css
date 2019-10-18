@@ -20,3 +20,13 @@
 .App-link {
   color: #09d3ac;
 }
+
+.done{
+  color: green;
+  cursor: pointer;
+}
+
+.undone{
+  color: red;
+  cursor: pointer;
+}

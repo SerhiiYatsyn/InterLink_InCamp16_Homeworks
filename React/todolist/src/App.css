@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: black;
+    padding: 20px 40px;
+    color: white;
+    text-align: center;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.counters {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+#filter {
+    border-radius: 50px;
+    margin: auto 0;
+    height: 30px;
+}
+
+app-form {
+    width: 100%;
+}
+
+#owner {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 25%;
+}
+
+li {
+    margin: 0 0 1px 0;
+}
+
+#lists{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+#lists a{
+    font-size: x-large;
+}
+
+.active_link{
+    color: red;
+}
+

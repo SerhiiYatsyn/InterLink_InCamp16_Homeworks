@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+#toDoEl {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.form {
+    display: flex;
+}
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50px;
+
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+.editConfirmBtn {
+    padding: 10px;
+    width: 25%;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+.ConfirmBtnActive{
+    background: lawngreen;
+}
+
+.editConfirmBtn:hover {
+    background-color: #bbb;
+}
+

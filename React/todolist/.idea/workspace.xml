@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b2b7914c-e6c8-4acc-a0db-ac38df38e4de" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SLTLJGpzxLx7kG1f8w4pxKyAjD" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2b7914c-e6c8-4acc-a0db-ac38df38e4de" name="Default Changelist" comment="" />
+      <created>1571341819085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571341819085</updated>
+      <workItem from="1571341820666" duration="11927000" />
+      <workItem from="1571382360692" duration="12331000" />
+      <workItem from="1571428562064" duration="2298000" />
+      <workItem from="1571468347812" duration="1229000" />
+      <workItem from="1571484767215" duration="599000" />
+      <workItem from="1571522047753" duration="7494000" />
+      <workItem from="1571588505376" duration="10303000" />
+      <workItem from="1571685657918" duration="7730000" />
+      <workItem from="1571740469756" duration="9995000" />
+      <workItem from="1571825524992" duration="4797000" />
+      <workItem from="1571893023474" duration="6725000" />
+      <workItem from="1571903870529" duration="932000" />
+      <workItem from="1571906263494" duration="16202000" />
+      <workItem from="1572300361345" duration="18000" />
+      <workItem from="1572350183943" duration="3575000" />
+      <workItem from="1572360004887" duration="1422000" />
+      <workItem from="1572384860297" duration="3927000" />
+      <workItem from="1572429246462" duration="13069000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

@@ -7,8 +7,8 @@ export default class ToDoList extends React.Component {
         super(props);
         this.state = {
             listID: props.id,
-            toDoItems: this.props.toDoItems,
-            lastID: this.props.toDoItems[this.props.toDoItems.length - 1].id
+            toDoItems: this.props.toDoItems
+            // lastID: this.props.toDoItems[this.props.toDoItems.length - 1].id | 0
         };
 
         this.toggle = this.toggle.bind(this);
@@ -18,11 +18,11 @@ export default class ToDoList extends React.Component {
 
 
     componentDidUpdate() {
+        console.log(this.state)
         if (this.state.listID !== this.props.id) this.setState({
             listID: this.props.id,
-            toDoItems: this.props.toDoItems, lastID: this.props.toDoItems[this.props.toDoItems.length - 1].id
+            toDoItems: this.props.toDoItems, lastID: this.props.toDoItems===undefined?this.props.toDoItems[this.props.toDoItems.length - 1].id:0
         }); // без if будет бесконечный цикл
-        if(this.state.toDoItems === undefined){ return (<Redirect to='/Lists/'>)}
     }
 
     getListId() {

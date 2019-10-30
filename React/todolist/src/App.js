@@ -103,12 +103,18 @@ class App extends React.Component {
             return sum;
         }, 0)
     }
-
+    addNewList(){
+        debugger;
+        this.state.lists.push(this.state.lists[0]);
+        this.setState({lists:this.state.lists});
+        console.log(this.state.lists    )
+    }
     render() {
         return (
             <Router>
                 <div id="toDoApp">
                     <div id="lists">
+                        <button onClick={()=>this.addNewList()}>AddList</button>
                         {/*{this.renderLists()}*/}
                         {this.state.lists.map((list, index) => {
                             {

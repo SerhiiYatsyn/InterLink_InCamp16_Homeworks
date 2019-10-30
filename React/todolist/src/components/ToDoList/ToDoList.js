@@ -1,6 +1,7 @@
 import React from 'react'
 import ToDoListItem from "../ToDoListItem/ToDoListItem";
 import {Redirect, useParams} from "react-router";
+import TasksNotFound from "../TasksNotFound/TasksNotFound";
 
 export default class ToDoList extends React.Component {
     constructor(props) {
@@ -21,7 +22,8 @@ export default class ToDoList extends React.Component {
         console.log(this.state)
         if (this.state.listID !== this.props.id) this.setState({
             listID: this.props.id,
-            toDoItems: this.props.toDoItems, lastID: this.props.toDoItems===undefined?this.props.toDoItems[this.props.toDoItems.length - 1].id:0
+            toDoItems: this.props.toDoItems,
+            lastID: this.props.toDoItems === undefined ? this.props.toDoItems[this.props.toDoItems.length - 1].id : 0
         }); // без if будет бесконечный цикл
     }
 
@@ -56,15 +58,22 @@ export default class ToDoList extends React.Component {
     }
 
     render() {
+        let forRender;
+        if (this.state.toDoItems.length === 0) {
+            forRender = <TasksNotFound/>;
+        } else {
+            forRender = this.state.toDoItems.map((todo) => {
+                return <ToDoListItem todo={todo} key={todo.id} id={todo.id}
+                                     updateEditMode={this.updateEditMode} removeToDo={this.removeToDo}
+                                     editToDoItem={this.editToDoItem} toggle={this.toggle}/>
+            })
+        }
+
         return (
             <div>
                 <ul>
                     {
-                        this.state.toDoItems.map((todo) => {
-                            return <ToDoListItem todo={todo} key={todo.id} id={todo.id}
-                                                 updateEditMode={this.updateEditMode} removeToDo={this.removeToDo}
-                                                 editToDoItem={this.editToDoItem} toggle={this.toggle}/>
-                        })
+                        forRender
                     }
                 </ul>
             </div>

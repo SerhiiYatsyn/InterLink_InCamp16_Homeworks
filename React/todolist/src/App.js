@@ -27,6 +27,7 @@ class App extends React.Component {
                     {id: 1, text: "React", done: true, hidden: false},
                     {id: 2, text: "ToDoList", done: false, hidden: false},
                 ]],
+            namesOfLists: ["first", "second"],
             editMode: false,
             tempForEdit: "",
             currentListId: 0,
@@ -103,30 +104,31 @@ class App extends React.Component {
             return sum;
         }, 0)
     }
-    addNewList(){
-        debugger;
-        this.state.lists.push(this.state.lists[0]);
-        this.setState({lists:this.state.lists});
-        console.log(this.state.lists    )
+
+    addNewList() {
+        if (document.getElementById('listName').value.length > 0) {
+            this.state.lists.push([]);
+            this.state.namesOfLists.push(document.getElementById('listName').value);
+            this.setState({lists: this.state.lists, namesOfLists: this.state.namesOfLists});
+            document.getElementById('listName').value = "";
+            console.log(this.state.lists)
+        }
     }
+
     render() {
         return (
             <Router>
                 <div id="toDoApp">
                     <div id="lists">
-                        <button onClick={()=>this.addNewList()}>AddList</button>
-                        {/*{this.renderLists()}*/}
+                        <input type="text" id='listName'/>
+                        <button onClick={() => this.addNewList()}>AddList</button>
                         {this.state.lists.map((list, index) => {
                             {
                                 return <NavLink onClick={() => this.set(index)} exact to={`/List/${index}`} key={index}
-                                                activeClassName="active_link">{index}</NavLink>
+                                                activeClassName="active_link">{this.state.namesOfLists[index]}</NavLink>
                             }
                         })
                         }
-                        {/*<NavLink onClick={() => this.set(0)} exact to={`/List/${0}`} key={0}*/}
-                        {/*         activeClassName="active_link">{0}</NavLink>*/}
-                        {/*<NavLink onClick={() => this.set(1)} exact to={`/List/${1}`} key={1}*/}
-                        {/*         activeClassName="active_link">{1}</NavLink>*/}
                     </div>
 
 
@@ -159,10 +161,11 @@ class App extends React.Component {
                         {/*<Route path="/notFound" exact component={ToDoHeader}></Route>*/}
                         <Switch>
                             <Route path="/List/:id" exact
-                                   render={(props) => <ToDoList id={props.match.params.id}
-                                                                toDoItems={this.state.lists[props.match.params.id]}
-                                                                updateList={this.updateList}
-                                                                updateEditMode={this.updateEditMode}/>}>
+                                   render={(props) => <ToDoList
+                                       id={props.match.params.id}
+                                       toDoItems={this.state.lists[props.match.params.id]}
+                                       updateList={this.updateList}
+                                       updateEditMode={this.updateEditMode}/>}>
                             </Route>
 
                         </Switch>

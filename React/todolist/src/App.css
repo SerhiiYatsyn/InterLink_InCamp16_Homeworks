@@ -57,9 +57,13 @@ li {
     display: flex;
     flex-direction: column;
     position: absolute;
+    width: 154px;
 }
 #lists a{
     font-size: x-large;
+    border-bottom: 1px solid;
+    text-decoration: none;
+    text-align: center;
 }
 
 .active_link{

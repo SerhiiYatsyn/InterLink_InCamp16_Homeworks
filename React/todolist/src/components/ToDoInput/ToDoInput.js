@@ -22,7 +22,6 @@ export default class ToDoInput extends React.Component {
     };
 
     addToDo(toDoText) {
-        debugger;
         if (toDoText.length > 0) {
             let changedList = this.props.toDoItems;
             if (changedList.length !== 0)
